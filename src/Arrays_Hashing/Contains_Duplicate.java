@@ -15,6 +15,12 @@ public class Contains_Duplicate {
 
     static boolean containsDuplicate(int[] nums) {
         Set<Integer> numbers = new HashSet<>();
+//        for (int i = 0; i < nums.length; i++) {
+//            if (!numbers.add(nums[i])) {
+//                return true;
+//            }
+//        }
+
         for (int num : nums) {
             if (numbers.contains(num))
                 return true;
